@@ -1,6 +1,5 @@
 {{! Front page; this file renders a front page with a list of the latest posts }}
 {{> head}}
-{{> navbar}}
 <main>
     {{! loop that generates a list of posts }}
     {{#each posts}}
@@ -44,24 +43,6 @@
             </h2>
             {{! /post title }}
 
-            {{! post creation date }}
-            <time datetime="{{date createdAt 'YYYY-MM-DDTHH:mm'}}">
-                {{date createdAt}}
-            </time>
-            {{! /post creation date }}
-
-            {{! post author }}
-            {{#author}}
-                <img 
-                    src="{{avatarImage.url}}" 
-                    {{lazyload "lazy"}} 
-                    alt="{{avatarImage.alt}}" 
-                    height="{{avatarImage.height}}"  
-                    width="{{avatarImage.width}}">
-                <a href="{{url}}">{{name}}</a>
-            {{/author}}
-            {{! /post author }}
-
             {{! main tag - if no main tag is selected, then the first tag in the list of all tags will be used }}
             {{#if mainTag}}
                 <a href="{{mainTag.url}}">{{mainTag.name}}</a>
@@ -81,9 +62,6 @@
     {{! /loop that generates list of posts }}
     
 </main>
-<aside>
-    {{> sidebar}}
-</aside>
 
 {{> pagination}}
 {{> footer}}

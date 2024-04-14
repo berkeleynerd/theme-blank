@@ -1,6 +1,6 @@
 {
     "name": "Blank",
-    "version": "1.5.0.0",
+    "version": "1.5.9.0",
     "author": "TidyCustoms <https://tidycustoms.net/>",
     "renderer": {
         "relatedPostsNumber": 3,
@@ -79,14 +79,14 @@
             "name": "mainWidth",
             "label": "Main width",
             "group": "Layout",
-            "value": "860px",
+            "value": "650px",
             "type": "text"
         },
         {
             "name": "sidebarWidth",
             "label": "Sidebar width",
             "group": "Layout",
-            "value": "300px",
+            "value": "0px",
             "type": "text"
         },
         {
