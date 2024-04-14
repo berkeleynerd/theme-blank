@@ -8,7 +8,6 @@ var generateThemeVariables = function(params) {
       output += ` 
          :root {
              --main-width:   ${params.mainWidth};
-             --sidebar-width:  ${params.sidebarWidth};
          }`;  
 
    return output;

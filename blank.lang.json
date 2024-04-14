@@ -4,12 +4,6 @@
       "pagination": {
          "prev": "Previous",
          "next": "Next"
-      },
-
-      "sidebar": {
-         "selectedPosts": "Selected posts",
-         "featuredPosts": "Featured posts",
-         "authors": "Authors"
       }
    },
 
